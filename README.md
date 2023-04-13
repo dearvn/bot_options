@@ -31,4 +31,4 @@ Sell to Open Put Strike $401 Expiration 3/8 (Market)
 
 ```
 
-![Alt text](https://github.com/dearvn/bot_options/raw/main/SPY.png?raw=true "SPY")
+![Alt text](https://github.com/dearvn/bot_options/raw/main/SPY-20230413.png?raw=true "SPY")
