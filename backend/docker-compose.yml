@@ -1,0 +1,60 @@
+version: '3.5'
+services:
+
+  broker:
+    image: rabbitmq:latest
+    env_file: &envfile
+      - env.env
+    ports:
+      - 5672:5672
+
+  redis:
+    hostname: redis
+    image: redis:latest
+    command: redis-server --appendonly yes
+    volumes:
+      - ./data:/data
+
+  app:
+    build: .
+    image: &app app
+    restart: "no"
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    env_file: *envfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+    links:
+      - broker
+      - redis
+    depends_on:
+      - broker
+      - redis
+
+  worker:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: *app
+    restart: "no"
+    env_file: *envfile
+    command: ["celery", "worker", "--app=worker.worker.app", "--concurrency=1", "--hostname=worker@%h", "--loglevel=INFO"]
+    volumes:
+      - ./app:/app
+    links:
+      - broker
+      - redis
+    depends_on:
+      - broker
+      - redis
+
+  #flower:
+  #  image: zoomeranalytics/flower:0.9.1-4.0.2
+  #  restart: "no"
+  #  env_file: *envfile
+  #  ports:
+  #    - "5555:5555"
+  #  depends_on:
+  #    - broker
+
