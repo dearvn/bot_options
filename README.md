@@ -3,6 +3,13 @@ The bot is ideal for traders looking to reduce the amount of time spent on resea
 
 My account less than $25K so I can't buy sell many time in a day, I use this way that I can trade many times on Tradovate
 
+
+Everyday, can entry 2 orders and gain profit at leat 40%.
+
+Cost to set up an options bot: a vps
+
+My logic is simple and easy to auto trading on TDA.
+
 ```
 Buy to Open Call Strike $404 Expiration 3/7   ...... + $500
 
@@ -32,3 +39,5 @@ Sell to Open Put Strike $401 Expiration 3/8 (Market)
 ```
 
 ![Alt text](https://github.com/dearvn/bot_options/raw/main/SPY-20230413.png?raw=true "SPY")
+
+![Alt text](https://github.com/dearvn/bot_options/raw/main/setting.png?raw=true "Setting")
