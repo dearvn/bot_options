@@ -38,6 +38,15 @@ Sell to Open Put Strike $401 Expiration 3/8 (Market)
 
 ```
 
+Monitoring intra day options price
+
 ![Alt text](https://github.com/dearvn/bot_options/raw/main/SPY-20230413.png?raw=true "SPY")
 
-![Alt text](https://github.com/dearvn/bot_options/raw/main/setting.png?raw=true "Setting")
+Setting logic
+
+![Alt text](https://github.com/dearvn/bot_options/raw/main/Settings.png?raw=true "Setting")
+
+Orders
+
+![Alt text](https://github.com/dearvn/bot_options/raw/main/Orders.png?raw=true "Order")
+
