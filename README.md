@@ -38,6 +38,15 @@ Sell to Open Put Strike $401 Expiration 3/8 (Market)
 
 ```
 
+## Install
+*Backend
+
+I will guide later
+
+*Frontend
+
+Please use WP plugin at https://github.com/dearvn/wp-options-bot 
+
 Monitoring intra day options price
 
 ![Alt text](https://github.com/dearvn/bot_options/raw/main/SPY-20230413.png?raw=true "SPY")
