@@ -1,7 +1,16 @@
 Close this repo
 
 ```bash
-cd bot_options
+git clone https://github.com/dearvn/bot_options.git
+```
+
+Open backend folder of this project by PyCharm and create an venv enviroment
+
+![Alt text](https://github.com/dearvn/bot_options/raw/main/step1?raw=true "step1")
+
+
+```bash
+cd bot_options/backend
 ```
 
 ## Installation to test on local not use docker
