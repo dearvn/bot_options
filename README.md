@@ -1,7 +1,32 @@
 # bot_options
 The bot is ideal for traders looking to reduce the amount of time spent on researching and analyzing the markets, as it can quickly scan for and identify the most profitable trades. 
 
-My account less than $25K so I can't buy sell many time in a day, I use this way that I can trade many times on Tradovate
+## Features
+
+1. Monitoring OPTIONS price of SPY, QQQ
+2. View History to analysys new logci trading
+3. Auto or manually trading
+
+## Technologies
+1. Python
+2. Docker
+3. Laravel
+4. Mongodb
+5. Pusher
+
+## UI frontend
+
+1. Setting logic
+
+![Alt text](https://github.com/dearvn/bot_options/raw/main/Settings.png?raw=true "Setting")
+
+2. SPY price
+
+![Alt text](https://github.com/dearvn/bot_options/raw/main/SPY-20230413.png?raw=true "SPY")
+
+3. Orders
+
+![Alt text](https://github.com/dearvn/bot_options/raw/main/Orders.png?raw=true "Order")
 
 
 Everyday, can entry 2 orders and gain profit at leat 40%.
@@ -69,20 +94,6 @@ docker exec -i -t stock_app_1  /bin/bash
 nohup python manage.py runserver 0.0.0.0:8000
 
 ```  
+# Frontend
 
-
-*Frontend
-
-Currently, I am using Laravel to host Frontend UI to connect with backend.
-
-
-![Alt text](https://github.com/dearvn/bot_options/raw/main/SPY-20230413.png?raw=true "SPY")
-
-Setting logic
-
-![Alt text](https://github.com/dearvn/bot_options/raw/main/Settings.png?raw=true "Setting")
-
-Orders
-
-![Alt text](https://github.com/dearvn/bot_options/raw/main/Orders.png?raw=true "Order")
-
+Contact with me if you want to one
