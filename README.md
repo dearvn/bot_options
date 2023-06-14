@@ -1,6 +1,12 @@
 # bot_options
 The bot is ideal for traders looking to reduce the amount of time spent on researching and analyzing the markets, as it can quickly scan for and identify the most profitable trades. 
 
+## Cost
+
+It is cheap to get a bot trading options automatically
+
+A VPS and a domain
+
 ## Features
 
 1. Monitoring OPTIONS price of SPY, QQQ
@@ -99,4 +105,4 @@ nohup python manage.py runserver 0.0.0.0:8000
 ```  
 # Frontend
 
-Contact with me if you want to one
+Contact donald.nguyen.it@gmail.com if you want to get one
