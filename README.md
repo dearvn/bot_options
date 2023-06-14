@@ -43,13 +43,13 @@ Sell to Open Put Strike $401 Expiration 3/8 (Market)
 
 1. Get refresh token from TD Ameritrade ref https://www.youtube.com/watch?v=aT1nB-vMqdE
 2. Update params in env.env file:
-   ```bash
+```bash
   TDAMERITRADE_ACCOUNT_ID=
   
   TDAMERITRADE_CLIENT_ID=
   
   TDAMERITRADE_REFRESH_TOKEN=
-   ```
+```
 4. Update refresh_token in /app/worker/token.pickle too:
 
 ```bash
