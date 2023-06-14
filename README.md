@@ -6,6 +6,7 @@ The bot is ideal for traders looking to reduce the amount of time spent on resea
 1. Monitoring OPTIONS price of SPY, QQQ
 2. View History to analysys new logci trading
 3. Auto or manually trading
+4. Send SMS to notice entry order
 
 ## Technologies
 1. Python
@@ -13,6 +14,8 @@ The bot is ideal for traders looking to reduce the amount of time spent on resea
 3. Laravel
 4. Mongodb
 5. Pusher
+6. Twillio
+7. TD Ameritrade
 
 ## UI frontend
 
