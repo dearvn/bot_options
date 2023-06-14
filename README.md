@@ -39,15 +39,42 @@ Sell to Open Put Strike $401 Expiration 3/8 (Market)
 ```
 
 ## Install
-*Backend
+# Backend
 
-I will guide later
+1. Get refresh token from TD Ameritrade ref https://www.youtube.com/watch?v=aT1nB-vMqdE
+2. Update params in env.env file:
+   ```bash
+  TDAMERITRADE_ACCOUNT_ID=
+  
+  TDAMERITRADE_CLIENT_ID=
+  
+  TDAMERITRADE_REFRESH_TOKEN=
+   ```
+4. Update refresh_token in /app/worker/token.pickle too:
+
+```bash
+{"creation_timestamp": 1684423154, "token": {"access_token": "xxxxx", "refresh_token": "", "scope": "PlaceTrades AccountAccess MoveMoney", "expires_in": 1800, "refresh_token_expires_in": 7776000, "token_type": "Bearer", "expires_at": 1684424954}}
+```
+
+5. Go to backend folder run docker
+
+```bash
+
+docker-compose build
+
+docker-compose up -d
+
+docker exec -i -t stock_app_1  /bin/bash
+
+nohup python manage.py runserver 0.0.0.0:8000
+
+```  
+
 
 *Frontend
 
-Please use WP plugin at https://github.com/dearvn/wp-options-bot 
+Currently, I am using Laravel to host Frontend UI to connect with backend.
 
-Monitoring intra day options price
 
 ![Alt text](https://github.com/dearvn/bot_options/raw/main/SPY-20230413.png?raw=true "SPY")
 
